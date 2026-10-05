@@ -5,6 +5,8 @@ services:
     name: roktok
     runtime: node
     plan: free
+    region: frankfurt
+    branch: main
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /
