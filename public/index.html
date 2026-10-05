@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1"/>
+<meta name="theme-color" content="#0a0c12"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>ROKTOK — Personal AI Creative Studio</title>
+<meta name="description" content="ROKTOK — ONE IDEA. ONE PROMPT. YOUR COMPLETE VIDEO. Install the personal AI video studio on your phone."/>
+<meta name="application-name" content="ROKTOK"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="ROKTOK"/>
+<link rel="manifest" href="/manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png"/>
+<link rel="mask-icon" href="/icons/icon-192.png" color="#ff6a3d"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0c12'/%3E%3Cpath d='M18 46V18h14c7 0 12 4 12 10 0 4-2 7-6 9l8 9h-9l-7-8h-4v8z' fill='url(%23g)'/%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff4d4d'/%3E%3Cstop offset='1' stop-color='%23ff9d2e'/%3E%3C/linearGradient%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="/app.css"/>
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand" onclick="location.hash='#/home'">
+      <span class="logo-dot"></span>
+      <div class="brand-text"><strong>ROKTOK</strong><small>ONE IDEA. ONE PROMPT. YOUR COMPLETE VIDEO.</small></div>
+    </div>
+    <div class="top-actions">
+      <button id="installBtn" class="icon-btn" title="Install ROKTOK on your phone" style="display:none">📲</button>
+      <button id="themeBtn" class="icon-btn" title="Theme">◐</button>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav id="bottomnav">
+    <a href="#/home" data-nav="home"><span class="ni">⌂</span><span>Home</span></a>
+    <a href="#/create" data-nav="create" class="nav-create"><span class="ni">＋</span><span>Create</span></a>
+    <a href="#/projects" data-nav="projects"><span class="ni">▤</span><span>Projects</span></a>
+    <a href="#/settings" data-nav="settings"><span class="ni">⚙</span><span>Settings</span></a>
+  </nav>
+</div>
+<div id="toasts"></div>
+<div id="modal-root"></div>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>
