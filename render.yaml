@@ -1,0 +1,10 @@
+# Render deployment blueprint for ROKTOK.
+# Deployment configuration only — no application code or features changed.
+services:
+  - type: web
+    name: roktok
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
